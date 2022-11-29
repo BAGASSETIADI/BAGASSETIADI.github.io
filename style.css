@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+*,body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.fContainer{
+    width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+audio{
+    width: 100px;
+    height: 40px;
+    -webkit-filter: drop-shadow(0px 0px 5px white);
+}
+.audio{
+    z-index: 69;
+    top: 80%;
+    left: 2%;
+    margin-top: 60px;
+    position: fixed;
+}
+.navbar{
+    z-index: 70;
+    width: 100%;
+    background-image: linear-gradient(45deg, rgb(0, 106, 255),rgb(0, 204, 255));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 0px 20px 20px;
+    position: fixed;
+}
+.logo{
+    margin-left: 20px;
+}
+.logo img{
+    width: 40px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+.navigation ul{
+    display: flex;
+    margin-right: 10px;
+}
+.navigation li{
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 5px;
+    list-style: none;
+    margin-right: 25px;
+    margin-top: 0px;
+    border-radius: 0px 10px 0px 10px;
+    border: solid rgba(0, 0, 0, 0) 2px;
+    transition: all 0.3s ease-in-out;
+}
+.navigation li:hover{
+    border: solid white 2px;
+    scale: 1.1;
+    background-image: linear-gradient(45deg, blue, black);
+    color: white;
+}
+.home{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/background/home-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-content{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-image{
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-image img{
+    z-index: 2;
+    -webkit-filter: drop-shadow(0px 0px 6px rgb(0, 121, 196));
+    width: 250px;
+    animation: home-image ease-in-out 2s infinite;
+}
+.home-image svg{
+    -webkit-filter: drop-shadow(0px 0px 7px rgb(255, 255, 255));
+    position: absolute;
+    top: 15%;
+    width: 450px;
+    animation: blob ease-in-out 2s infinite;
+}
+.name-home{
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    display: flex;
+}
+.yellow{
+    font-size: 35px;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: rgb(0, 229, 255);
+}
+.home-text b{
+    font-size: 18px;
+}
+@keyframes blob {
+    0%{
+        top: 15%;
+    }
+    50%{
+        top: 18%;
+    }
+    100%{
+        top: 15%;
+    }
+
+}
+@keyframes home-image {
+    0%{
+        scale: 1.0;
+    }
+    50%{
+        scale: 0.9;
+    }
+    100%{
+        scale: 1.0;
+    }
+
+}
+.margin-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.home-text{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.home-text p{
+    text-align: justify;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-container{
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, blue,rgb(0, 225, 255));
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: absolute;
+    animation: social ease-in-out 1s infinite;
+}
+.social-card{
+    background-image: linear-gradient(45deg, blue, rgb(23, 23, 23));
+    width: 100px;
+    border-radius: 5px;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+.social-card:hover{
+    scale: 1.1;
+    background-image: linear-gradient(45deg, rgb(23, 23, 23), rgb(255, 0, 0));
+}
+.social-card b{
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+.social-container img{
+    margin: 5px;
+    width: 60px;
+}
+@keyframes social{
+    0%{
+        box-shadow: 0px 0px 10px 5px rgb(0, 89, 255);
+    }
+    50%{
+        box-shadow: 0px 0px 10px 6px rgb(0, 89, 255);
+    }
+    0%{
+        box-shadow: 0px 0px 10px 5px rgb(0, 89, 255);
+    }
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/background/about-background.svg);
+    background-size: cover;
+    background-position: center;
+
+}
+.about{
+    background-image: url(https://i.postimg.cc/gk2WzBxd/image.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.about-header{
+    z-index: 0;
+    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+    margin-bottom: 30px;
+    color: white;
+}
+.about-header h1{
+    font-size: 50px;
+}
+.about-list{
+    display: flex;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(10deg, rgb(0, 217, 255), rgb(0, 123, 255),#222);
+    box-shadow: 0px 0px 10px 5px rgb(0, 123, 255);
+}
+.text-data{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.data-diri{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+li{
+    margin-top: 10px;
+    list-style: none;
+}
+.project{
+    background-image: url(/assets/background/project-background.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project-header{
+    margin-top: 80px;
+    font-size: 40px;
+    color: white;
+    filter: drop-shadow(0px 0px 10px rgb(50, 51, 52));
+}
+.project-container{
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shadow{
+    box-shadow: 0px 0px 10px 4px rgb(50, 51, 52);
+}
+.project1{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+.image-card{
+    filter: grayscale(100%);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all  0.3s ease-in-out;
+    cursor: pointer;
+}
+.image-card:hover{
+    rotate: 10deg;
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+.image-card img{
+    border-radius: 20px;
+    width: 250px;
+    height: 150px;
+}
+.text-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: justify;
+}
+.text-card h1{
+    margin-bottom: 5px;
+}
+.text-card p{
+    font-size: 12px;
+}
+@media screen and (max-width:600px){
+    .logo{
+        margin-right: 20px;
+    }
+    .navbar{
+        justify-content: center;
+    }
+    .navigation li{
+        margin-right: 0px;
+        padding: 4px;
+        font-size: 10px;
+    }
+    .navigation ul{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0px;
+    }
+    .home-content{
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    .home-text{
+    margin: 0px;
+        font-size: 10px;
+    }
+    .name-home h1{
+        margin-top: 0px;
+        font-size: 14px;
+    }
+    .home-text b{
+        font-size: 12px;
+    }
+    .audio{
+        top: 80%;
+    }
+    .home-image svg{
+        width: 200px;
+        top: 10%;
+        position: absolute;
+        animation: blob1 ease-in-out 2s infinite;
+    }
+    @keyframes blob1 {
+        0%{
+            top: 10%;
+        }
+        50%{
+            top: 13%;
+        }
+        100%{
+            top: 10%;
+        }
+    
+    }
+    .home-image img{
+        top: 6%;
+        position: absolute;
+        width: 150px;
+    }
+    .social-card img{
+        width: 40px;
+    }
+    .social-card b{
+        letter-spacing: 0;
+        font-size: 9px;
+    }
+    .social-card{
+        width: 100%;
+        height: 100%;
+        padding: 4px;
+    }
+    .project-container{
+        flex-direction: column;
+    }
+}
